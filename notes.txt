@@ -1,1 +1,33 @@
-lorenhfbh
+how to make file in terminal.
+command 1:- touch index2.html
+command 2:- vi index.html
+
+        esc : w q enter = save.
+
+**Create a new file using the `touch` command**
+command 1:- touch index2.html
+ 
+
+command 2: `vi index.html`
+# This command opens a new file named `index.html` in the `vi` editor.
+
+To save and exit the vi editor, press the esc key, then type :wq and press enter.
+**Save and exit the `vi` editor**
+
+BROWSER STATUS CODE:200 = success
+
+used api url=https://fakerestapi.azurewebsites.net/index.html
+
+>>>Swagger is a API Documentation of Tools and testing Tools (Backend Developers)
+
+>>>Postman is a API testing Tools
+
+>>>For API Calling
+
+1.Buildin JS Techniques
+    a.XMLHTTPRequest class
+    b.Fetch API
+
+2.thirdparty Libries techniques
+        a.JQuery
+        b.Axios cdn link (https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js)
