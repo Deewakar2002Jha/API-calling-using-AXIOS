@@ -14,7 +14,7 @@
 <body>
     <h1>API calling using AXios</h1>
     
-    <div class="d-flex justify-content-center invisible">
+    <div class="d-flex justify-content-center visible a_myspinner">
         <div class="spinner-border text-success" role="status">
             <span class="visually-hidden ">Loading...</span>
         </div>
@@ -24,7 +24,14 @@
     </div>
     
     <script>
+        var a_myspinner = document.querySelector('.a_myspinner');
+
         document.querySelector('.a_getdata').addEventListener('click',function(){
+            // document.querySelector('.a_myspinner').classList.toggle('visible',true);
+            
+            //lets create a promise object
+        
+            //let object = new Classname();
             let x = new Promise(function(resolve,reject){
             //resolve and reject are callback function
             //producing code (the code which may take time)
@@ -47,6 +54,7 @@
         //Consuming Code
         //promiseObject.them().catch();
         x.then(function(data){
+            a_myspinner.remove();
             //Success
             console.log('consuming code ',data);
             var tr = `
@@ -95,9 +103,7 @@
         });
         });
 
-        //lets create a promise object
         
-        //let object = new Classname();
 
         
     </script>
